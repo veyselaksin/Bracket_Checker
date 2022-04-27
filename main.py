@@ -1,6 +1,5 @@
 # TGA MAIN FUNC
 
-
 class Checker:
 
     open_brackets = ["{", "[", "("]
