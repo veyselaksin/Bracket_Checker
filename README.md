@@ -1,6 +1,6 @@
 # BRACKET CHECKER
 
-There is a class called Checker in the algorithm and this class takes a string value. The Checker class also has a function called isBalanced. This function checks whether the parentheses in the given string are used correctly. Returns YES if it is used correctly, and NO if not.
+There is a class called Checker in the algorithm and this class takes a string value. The Checker class also has a function called isBalanced. This function checks whether the parentheses in the given string are used correctly. Returns "YES" if it is used correctly, and "NO" if not.
 
 
 While creating the algorithm, two arrays named open_brackets and close_brackets were used.
@@ -50,6 +50,6 @@ class Checker:
 git clone https://github.com/veyselaksin/Bracket_Checker.git
 
 cd Bracket_Checker
-python test/bc_test.py
+python -m test.bc_test.py
 
 ```
