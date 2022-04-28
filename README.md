@@ -1,16 +1,16 @@
 # BRACKET CHECKER
 
-Algoritmada Checker adlı bir sınıf vardır ve bu sınıf string bir değer alır. Checker sınıfı ayrıca isBalanced adlı bir fonksiyona sahiptir. Bu fonksiyon verilen string içerisinde yer alan parantezlerin doğru kullanılıp kullanılmadığını kontrol eder. Eğer doğru bir kullanım söz konusu ise EVET, değilse HAYIR değerini döndürür.
+There is a class called Checker in the algorithm and this class takes a string value. The Checker class also has a function called isBalanced. This function checks whether the parentheses in the given string are used correctly. Returns YES if it is used correctly, and NO if not.
 
 
-Algoritma oluşturulurken open_brackets, close_brackets adında iki adet dizi kullanılmıştır. 
+While creating the algorithm, two arrays named open_brackets and close_brackets were used.
 
 ```python
 open_brackets = ["{", "[", "("]
 close_brackets = ["}", "]", ")"]
 ```
 
-Bu diziler parantezlerin açılış ve kapanış etiketlerini temsil etmektedir. Açılış ve kapanış etiketlerinin olduğu dizileri zip fonksiyonu kullanılarak her bir açılış elemanı kendi kapanış elemanı ile birleştirilir. Ardından sözlük yapısı kullanılarak anahtar, değer ilişkisi elde edilir. 
+These sequences represent the opening and closing tags of the parentheses. Sequences of opening and closing tags are combined with each opening element with its own closing element using the zip function. Then, using the dictionary structure, the key-value relationship is obtained.
 
 ``` python
 open_brackets = ["{", "[", "("]
@@ -18,7 +18,7 @@ close_brackets = ["}", "]", ")"]
 brackets = dict(zip(open_brackets, close_brackets))
 ```
 
-Her açılış etiketi stack adında bir diziye aktarılır. Kapanış etiketine denk gelindiği zaman stack içerisinde bulunan en üstteki açılış etiketinin değeri ile kapanış etiketinin değeri karışlaştırılır. Eğer değerler birbirine eşit değilse fonskiyon "NO" değerini döndürür. Ayrıca stack içerisi boş değilse de fonksiyon "NO" değerini döndürür. Eğer işlemler başarılı olursa fonksiyon varsayılan olarak "YES" değerini döndürür.
+Each opening tag is passed into an array called stack. When the closing tag is encountered, the value of the topmost opening tag in the stack is compared with the value of the closing tag. If the values are not equal, the function returns "NO". Also, if the stack is not empty, the function returns "NO". If the operations are successful, the function returns "YES" by default.
 
 ```python
 class Checker:
@@ -45,9 +45,11 @@ class Checker:
 
 ```
 
-## Kullanım
+## Usage
 ```sh
 git clone https://github.com/veyselaksin/Bracket_Checker.git
 
-cd
+cd Bracket_Checker
+python test/bc_test.py
+
 ```
