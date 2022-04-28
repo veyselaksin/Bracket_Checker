@@ -58,6 +58,8 @@ python -m test.bc_test
 ```
 
 ## Source
-* https://www.javatpoint.com/balancing-parentheses-in-python
-* https://www.codespeedy.com/balanced-parentheses-in-python/
+* (Source 1)[https://www.javatpoint.com/balancing-parentheses-in-python]
+* (Source 2)[https://www.codespeedy.com/balanced-parentheses-in-python/]
+* (Source 3)[https://prepinsta.com/python-program/program-to-check-the-balance-of-parenthesis/]
+* 
 
