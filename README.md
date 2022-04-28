@@ -50,6 +50,9 @@ class Checker:
 git clone https://github.com/veyselaksin/Bracket_Checker.git
 
 cd Bracket_Checker
-python -m test.bc_test.py
+python test/bc_test.py
+
+# Alternative usage
+python -m test.bc_test
 
 ```
